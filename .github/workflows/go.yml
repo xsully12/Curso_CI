@@ -7,7 +7,7 @@ on:
   push:
     branches: [ "aula_1" ]
   pull_request:
-    branches: [ "aula-1" ]
+    branches: [ "aula_1" ]
 
 jobs:
   
