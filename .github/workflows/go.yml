@@ -25,6 +25,12 @@ jobs:
       with:
         go-version: ${{ matrix.go_version }}
 
+    - name: Build-BD
+      run: docker-compose build
+      
+    - name: create DB
+      run: docker-compose up -d
+
     - name: Test
       run: go test -v main_test.go
       
