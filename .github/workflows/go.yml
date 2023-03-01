@@ -12,10 +12,9 @@ on:
 jobs:
   
   test:
-    runs-on: ${{ matrix.OS }}
+    runs-on: ubuntu-latest
     strategy:
       matrix:
-        OS: ['ubuntu-latest', 'windows-11']
         go_version: [ '1.19', '1.18', '>=1.19' ]      
   
     steps:
@@ -36,7 +35,7 @@ jobs:
       
   Build:
      needs: test
-     runs-on: ${{ matrix.OS }}
+     runs-on: ubuntu-latest
      steps:
      - uses: actions/checkout@v3
      - name: Build
