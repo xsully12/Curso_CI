@@ -14,8 +14,8 @@ jobs:
   test:
     strategy:
       matrix:
-        go_version: [1.19, 1.18, '>=1.19' ]      
-        os: [ubunt-18.04, ubuntu-16.04]     
+        go_version: [ '.19', '1.18', '>=1.19' ]      
+        os: [ ubunt-18.04 , ubuntu-16.04 ]     
     runs-on: ${{ matrix.os }}
     steps:
     - uses: actions/checkout@v3
