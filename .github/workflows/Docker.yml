@@ -20,4 +20,4 @@ jobs:
     # Username used to log against the Docker registry
         username: xsully
     # Password or personal access token used to log against the Docker registry
-        password: ${{ secrets.DOCKERHUB_PASS }}
+        password: dckr_pat_wMTfD4QHt01QTg2YFF9g-H6CdKc
