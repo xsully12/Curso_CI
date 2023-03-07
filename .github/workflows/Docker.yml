@@ -1,0 +1,14 @@
+name: Dockeer
+
+on:
+  workflow_call:
+
+jobs:
+  
+  Docker:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Setup DOcker Build
+      uses: docker/setup-buildx-action@v2.4.1
