@@ -38,4 +38,4 @@ jobs:
         file: ./Dockerfile
         push: true
         # List of tags
-        tags: xsully/ci-go_alura:${{github.ref_name}}
+        tags: xsully/ci-go_alura
